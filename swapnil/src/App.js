@@ -416,16 +416,16 @@ const techCategories = [
     { name: "HTML5", url: "https://cdn.simpleicons.org/html5" },
     { name: "CSS3", url: "https://cdn.simpleicons.org/css" },
     { name: "JavaScript", url: "https://cdn.simpleicons.org/javascript" },
-    { name: "Windows", url: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/windows.png" },
+    { name: "Windows", url: process.env.PUBLIC_URL + "/windows.png" },
     { name: "Linux", url: "https://cdn.simpleicons.org/linux" }
   ],
   // Row 3 (6 items)
   [
     { name: "GitHub", url: "https://cdn.simpleicons.org/github/ffffff" },
-    { name: "WSO2", url: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wso2.png" },
+    { name: "WSO2", url: process.env.PUBLIC_URL + "/wso2.png" },
     { name: "Google Gemini", url: "https://cdn.simpleicons.org/googlegemini" },
     { name: "Claude / Anthropic", url: "https://cdn.simpleicons.org/anthropic" },
-    { name: "ChatGPT / OpenAI", url: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openai.png" },
+    { name: "ChatGPT / OpenAI", url: process.env.PUBLIC_URL + "/openai.png" },
     { name: "Bash / Terminal", url: "https://cdn.simpleicons.org/gnubash" }
   ]
 ];
@@ -462,6 +462,16 @@ const projectsData = [
       "Prompt-based intelligent data extraction for missing user inputs",
       "Session-aware backend with structured JSON validation and cost optimization logic",
       "Real-time pricing adjustments and interactive cost comparison UI"
+    ]
+  },
+  {
+    title: "Dubai Municipality — WSO2 IAM Demo",
+    category: "Full-Stack",
+    tags: ["WSO2 Identity Server", "OAuth 2.0", "OpenID Connect", "RBAC", "SSO"],
+    bullets: [
+      "Developed and presented a live demo for Dubai Municipality showcasing enterprise Identity & Access Management using WSO2 Identity Server.",
+      "Demonstrated Single Sign-On (SSO) across multiple applications and configured Role-Based Access Control (RBAC).",
+      "Showcased secure authentication flows including MFA, session management, and token-based authorization."
     ]
   }
 ];
