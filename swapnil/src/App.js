@@ -432,6 +432,18 @@ const techCategories = [
 
 const projectsData = [
   {
+    title: "AI-Powered Resume Screening System",
+    category: "AI/ML",
+    tags: ["FastAPI", "spaCy", "React", "MongoDB", "Firebase"],
+    bullets: [
+      "Developed a full-stack AI system to automate resume classification and candidate analysis",
+      "Backend built using FastAPI, Scikit-learn, and spaCy for resume categorization",
+      "Integrated MongoDB for secure user-specific data storage",
+      "Built React.js frontend with Material-UI and Firebase Authentication",
+      "Integrated LLM APIs for resume summarization, keyword extraction, and improvement suggestions"
+    ]
+  },
+  {
     title: "QuizMaster Pro",
     category: "AI/ML",
     tags: ["Flask", "Gemini API", "OAuth 2.0", "SQLAlchemy", "Bootstrap 5"],
