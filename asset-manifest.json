@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/swapnil-portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/swapnil-portfolio/static/js/main.08825c16.js",
+    "index.html": "/swapnil-portfolio/index.html",
+    "main.e6c13ad2.css.map": "/swapnil-portfolio/static/css/main.e6c13ad2.css.map",
+    "main.08825c16.js.map": "/swapnil-portfolio/static/js/main.08825c16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.08825c16.js"
+  ]
+}
