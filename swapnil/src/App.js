@@ -323,6 +323,38 @@ function FloatingNavbar({ active, onChange, theme, toggleTheme }) {
 
         <div style={{ width: 1, height: 20, background: "var(--border-color)", margin: "0 4px" }} />
 
+        {/* Resume Download */}
+        <a
+          href={process.env.PUBLIC_URL + "/Swapnil_Das_Resume.pdf"}
+          download="Swapnil_Das_Resume.pdf"
+          style={{
+            background: "transparent",
+            border: "none",
+            borderRadius: 999,
+            padding: "8px 16px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+            color: "var(--text-muted)",
+            fontFamily: "Space Grotesk, sans-serif",
+            fontSize: 13,
+            fontWeight: 600,
+            textDecoration: "none",
+            transition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)"
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = "var(--accent-color)"; e.currentTarget.style.background = "var(--nav-active-pill)"; }}
+          onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.background = "transparent"; }}
+          title="Download Resume"
+        >
+          <span style={{ display: "flex", alignItems: "center" }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
+          </span>
+          <span className="nav-label">Resume</span>
+        </a>
+
+        <div style={{ width: 1, height: 20, background: "var(--border-color)", margin: "0 4px" }} />
+
         {/* Theme Toggle */}
         <button
           onClick={toggleTheme}
